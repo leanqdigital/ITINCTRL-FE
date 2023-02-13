@@ -46,14 +46,14 @@
 /*Primary Colors Ends*/
 /*Secondary Colors Starts*/
 /*Secondary Colors Ends*/
-/*Alternate Colors Starts*/
-/*Alternate Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
 /*Colors Varaibles Ends*/
 .primary-btn {
   width: 100%;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   background: #000AFF;
-  color: #fff;
+  color: #804B00;
 }
 
 .primary-btn:hover {
@@ -62,8 +62,12 @@
 
 .secondary-btn {
   width: 100%;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   background: #FF9600;
-  color: #fff;
+  color: #FFFFFF;
+}
+
+.secondary-btn:hover {
+  background: #804B00;
 }
 /*# sourceMappingURL=buttons.css.map */

@@ -1,6 +1,6 @@
 @import "../variables/variables.scss";
 
-
+//Primary Color Starts
 .p0 {
   color: $clr-primary-zero;
 }
@@ -22,9 +22,10 @@
 .p6 {
   color: $clr-primary-six;
 }
+//Primary Color Ends
 
 
-
+//Primary Background Color Starts
 .p0-bg {
   background: $clr-primary-zero;
 }
@@ -46,9 +47,10 @@
 .p6-bg {
   background: $clr-primary-six;
 }
+//Primary Background Color Ends
 
 
-
+//Secondary Color Starts
 .s0 {
   color: $clr-secondary-zero;
 }
@@ -70,9 +72,10 @@
 .s6 {
   color: $clr-secondary-six;
 }
+//Secondary Color Ends
 
 
-
+//Secondary Background Color Starts
 .s0-bg {
   background: $clr-secondary-zero;
 }
@@ -94,9 +97,9 @@
 .s6-bg {
   background: $clr-secondary-six;
 }
+//Secondary Background Color Ends
 
-
-
+//Greyscale Color Starts
 .g0 {
   color: $clr-grayscale-zero;
 }
@@ -118,9 +121,9 @@
 .g6 {
   color: $clr-grayscale-six;
 }
+//Greyscale Color Ends
 
-
-
+//Greyscale Background Color Starts
 .g0-bg {
   background: $clr-grayscale-zero;
 }
@@ -142,3 +145,4 @@
 .g6-bg {
   background: $clr-grayscale-six;
 }
+//Greyscale Background Color Ends
