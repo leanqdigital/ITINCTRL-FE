@@ -847,27 +847,27 @@ a {
           box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
 }
 
-.slick-wrapper {
+.services-content .slick-wrapper {
   width: 40%;
 }
 
-.slick-arrow {
+.services-content .slick-arrow {
   cursor: pointer;
 }
 
-.slick-prev {
+.services-content .slick-prev {
   position: absolute;
   bottom: 50%;
   right: 100%;
 }
 
-.slick-next {
+.services-content .slick-next {
   position: absolute;
   left: 100%;
   bottom: 50%;
 }
 
-.slide-item {
+.services-content .slide-item {
   background: #ffffff;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -892,8 +892,8 @@ a {
   transition: 0.5s all;
 }
 
-.active-slide,
-.slide-item:hover {
+.services-content .active-slide,
+.services-content .slide-item:hover {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
           box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
