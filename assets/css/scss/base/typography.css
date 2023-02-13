@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.h3-b {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.h4-b {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.h4-m {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.body-l {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+}
+
+.body-s {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body-s-m {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body-xs {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.body-l-bold {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+}
+
+.body-s-bold {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn-text {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,47 @@
+.about-hero{
+    width: 100%;
+    padding: 100px 800px 100px 100px;
+  }
+  
+  .about-section-first{
+    .row{
+      display: flex;
+      justify-content: space-between;
+      .col{
+        width: 653px;
+        height: 492px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 100%;
+        }
+        .image2{
+          width: 351.94px;
+          height: 302.02px;
+        }
+      }
+    }
+  }
+  .about-section-second{
+    .row{
+      display: flex;
+      justify-content: space-between;
+      gap: 0px 130px;
+      .col{
+        width: 653px;
+        height: 492px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 100%;
+        }
+        .image2{
+          width: 351.94px;
+          height: 302.02px;
+        }
+      }
+    }
+  }
+  

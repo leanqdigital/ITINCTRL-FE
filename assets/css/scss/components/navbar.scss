@@ -1,0 +1,39 @@
+.header {
+  .navbar {
+    width: 100%;
+    padding: 24px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    .logo-container {
+      width: 192px;
+      height: 31px;
+      img {
+        width: 100%;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    }
+    .menu-items {
+      width: 570px !important;
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+          }
+          a:not(.btn-text):hover {
+            color: #000aff;
+          }
+        }
+      }
+    }
+  }
+}

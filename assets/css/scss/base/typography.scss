@@ -1,0 +1,92 @@
+@import "../variables/variables.scss";
+@import "../../../../assets/fonts/fonts.scss";
+
+h1 {
+  font-family: $ff-primary-bold;
+  font-size: $fs-40px;
+  line-height: $lh-60px;
+}
+
+h2 {
+  font-family: $ff-primary-bold;
+  font-size: $fs-32px;
+  line-height: $lh-48px;
+}
+
+h3 {
+  font-family: $ff-primary-medium;
+  font-size: $fs-24px;
+  line-height: $lh-36px;
+}
+
+.h3-b{
+  font-family: $ff-primary-bold;
+  font-size: $fs-24px;
+  line-height: $lh-36px;
+}
+
+h4 {
+  font-family: $ff-primary-regular;
+  font-size: $fs-20px;
+  line-height: $lh-30px;
+}
+
+.h4-b{
+  font-family: $ff-primary-bold;
+  font-size: $fs-20px;
+  line-height: $lh-30px;
+}
+
+.h4-m{
+  font-family: $ff-primary-medium;
+  font-size: $fs-20px;
+  line-height: $lh-30px;
+}
+
+.body-l {
+  font-family: $ff-primary-regular;
+  font-size: $fs-18px;
+  line-height: $lh-27px;
+}
+
+.body-s {
+  font-family: $ff-primary-regular;
+  font-size: $fs-16px;
+  line-height: $lh-24px;
+}
+
+.body-s-m {
+  font-family: $ff-primary-medium;
+  font-size: $fs-16px;
+  line-height: $lh-24px;
+}
+
+.body-xs {
+  font-family: $ff-primary-regular;
+  font-size: $fs-16px;
+  line-height: $lh-18px;
+}
+.body-l-bold {
+  font-family: $ff-primary-bold;
+  font-size: $fs-18px;
+  line-height: $lh-27px;
+}
+
+.body-s-bold {
+  font-family: $ff-primary-bold;
+  font-size: $fs-16px;
+  line-height: $lh-24px;
+}
+
+.btn-text{
+  font-family: $ff-primary-medium;
+  font-size: $fs-16px;
+  line-height: $lh-24px;
+}
+
+a{
+  font-family: $ff-primary-regular;
+  font-size: $fs-16px;
+  line-height: $lh-24px;
+  color: black;
+}

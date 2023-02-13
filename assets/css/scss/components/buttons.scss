@@ -1,0 +1,23 @@
+@import "../variables/variables.scss";
+
+.primary-btn{
+    width: 100%;
+    padding: 8px 16px 8px 16px;
+    background: $clr-primary-three;
+    color: #fff;
+}
+
+.primary-btn:hover{
+    background: $clr-primary-five;
+}
+
+.secondary-btn{
+    width: 100%;
+    padding: 8px 16px 8px 16px;
+    background: #FF9600;
+    color: #fff;    
+}
+
+.secondary-btn:hover{
+    background: $clr-secondary-five;
+}

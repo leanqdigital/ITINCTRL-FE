@@ -1,0 +1,21 @@
+.contact {
+    .row {
+      .col {
+        .text-area {
+          .contact-details {
+            .contact-content {
+              display: flex;
+              gap: 0 32px;
+              .icon-container {
+                width: 24px;
+                height: 24px;
+                img{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
