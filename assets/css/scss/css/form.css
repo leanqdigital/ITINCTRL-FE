@@ -1,0 +1,27 @@
+.contact .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 100px;
+}
+.contact .row .col .form-section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+.contact .row .col .form-section input {
+  border: none;
+  outline: none;
+  width: 649px;
+  height: 48px;
+  background: #F7F7F7;
+  padding: 5px;
+}
+.contact .row .col .form-section textarea {
+  border: none;
+  outline: none;
+  width: 649px;
+  background: #F7F7F7;
+  padding: 5px;
+}/*# sourceMappingURL=form.css.map */

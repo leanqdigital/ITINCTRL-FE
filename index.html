@@ -65,6 +65,7 @@
   }
 
   @media only screen and (max-width: 768px) {
+    
     .navbar-menu {
       display: none;
     }
@@ -87,9 +88,70 @@
       font-size: 24px;
       text-decoration: none;
     }
+
+    /* #navbar-mobile.hide .cross-icon {
+        display: none;
+    }  
+
+    #navbar-mobile.show .hamburger-icon {
+        display: none;
+    }   */
+
+    /* .navbar-menu-mobile{
+      display: none;
+    }
+
+    .navbar-menu-mobile.active{
+      display: block;
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+    } */
+
+    #navbar-mobile{
+      opacity: 0;
+      transform: scale(0);
+      transition: .4s ease opacity,.4s ease transform;
+    }
+
+    .mobile-nav-flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px 0;
+      margin: 14px 0;
+      
+    }
+
+    .mobile-nav-flex > a{
+      text-decoration: none;
+    }
+
+    .mobile-nav-flex > .primary-btn{
+      max-width: 40vw;
+      text-align: center;
+    }
+
   }
 
-  @media only screen and (max-width: 768px) {
+  #slick1{
+    display: none;
+  } 
+
+
+
+  @media only screen and (min-width: 320px) and (max-width: 500px) {
+    #slick3{
+    display: none;
+  } 
+
+  #slick1{
+    display: block;
+  } 
+  }
+
+  /* @media only screen and (max-width: 768px) {
     .navbar-hamburger.active~.navbar-menu-mobile {
       display: block;
       position: absolute;
@@ -99,7 +161,7 @@
       padding: 10px;
       width: 100%;
     }
-  }
+  } */
 </style>
 
 <body>
@@ -122,7 +184,7 @@
             </li>
           </ul>
         </div>
-        <div class="navbar-menu-mobile">
+        <!-- <div class="navbar-menu-mobile">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -132,14 +194,31 @@
               <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
             </li>
           </ul>
+        </div> -->
+
+        <!-- onclick="toggleNavbar()" -->
+        <div id="btn-nav-show" class="navbar-hamburger">
+          <!-- <a id="hamburger-icon" href="#">&#9747;</a> -->
+          <a id="cross-icon" href="#">&#9776;</a>
         </div>
-        <div class="navbar-hamburger">
-          <a href="#" onclick="toggleNavbar()">&#9776;</a>
-        </div>
+
+        <!-- cross &#9776; -->
+        <!-- cross &#9747; -->
       </div>
     </nav>
   </section>
   <!--Header Section Ends-->
+
+  <div id="navbar-mobile" class="navbar-menu-mobile" style="display: none">
+    <div class="mobile-nav-flex">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact</a>
+      
+        <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
+    </div>
+  </div>
 
   <!--Hero Section Starts-->
   <section class="hero bg-light">
@@ -191,9 +270,10 @@
     <div class="text-center">
       <span class="h3-b">Our Services</span>
     </div>
+    
     <div class="services-content m-80">
       <div class="services-description">
-        <div class="description active" id="content1">
+        <div class="description active" id="content1" data-id="1">
           <p class="h4-m s3">Hardware Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Regiscacacatration with Renewal and Business Relocation
@@ -205,7 +285,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content2">
+        <div class="description" id="content2" data-id="2">
           <p class="h4-m s3">Software Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -217,7 +297,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content3">
+        <div class="description" id="content3" data-id="3">
           <p class="h4-m s3">Web Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -229,7 +309,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content4">
+        <div class="description" id="content4" data-id="4">
           <p class="h4-m s3">App Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -241,7 +321,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content5">
+        <div class="description" id="content5" data-id="5">
           <p class="h4-m s3">Cloud Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -253,7 +333,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content6">
+        <div class="description" id="content6" data-id="6">
           <p class="h4-m s3">Business Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -265,7 +345,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content7">
+        <div class="description" id="content7" data-id="7">
           <p class="h4-m s3">Onsite Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -277,7 +357,7 @@
             after day.
           </p>
         </div>
-        <div class="description" id="content8">
+        <div class="description" id="content8" data-id="8">
           <p class="h4-m s3">Remote Services</p>
           <p class="h4-b m-8 g5">
             Domain Name Registration with Renewal and Business Relocation
@@ -291,58 +371,113 @@
         </div>
       </div>
       <div class="slick-wrapper">
+        <!-- mobile Slider -->
         <div id="slick1">
-          <div class="slide-item active" id="item1">
+          <div class="slide-item active" id="item1" data-index="1">
             <div class="image-container">
               <img src="assets/images/icons/domainhosting.svg" />
             </div>
             <p class="body-s-m m-24">Network Administration</p>
           </div>
-          <div class="slide-item" id="item2">
+          <div class="slide-item" id="item2" data-index="2">
             <div class="image-container">
               <img src="assets/images/icons/domain.svg" />
             </div>
             <p class="body-s-m m-24">Domain Name</p>
           </div>
-          <div class="slide-item" id="item3">
+          <div class="slide-item" id="item3" data-index="3">
             <div class="image-container">
               <img src="assets/images/icons/server.svg" />
             </div>
             <p class="body-s-m m-24">Server Facility</p>
           </div>
-          <div class="slide-item" id="item4">
+          <div class="slide-item" id="item4" data-index="4">
             <div class="image-container">
               <img src="assets/images/icons/support.svg" />
             </div>
             <p class="body-s-m m-24">Support`</p>
           </div>
-          <div class="slide-item" id="item5">
+          <div class="slide-item" id="item5" data-index="5">
             <div class="image-container">
               <img src="assets/images/icons/domainhosting.svg" />
             </div>
             <p class="body-s-m m-24">Network Administration</p>
           </div>
-          <div class="slide-item" id="item6">
+          <div class="slide-item" id="item6" data-index="6">
             <div class="image-container">
               <img src="assets/images/icons/domain.svg" />
             </div>
             <p class="body-s-m m-24">Domain Name</p>
           </div>
-          <div class="slide-item" id="item7">
+          <div class="slide-item" id="item7" data-index="7">
             <div class="image-container">
               <img src="assets/images/icons/server.svg" />
             </div>
             <p class="body-s-m m-24">Server Facility</p>
           </div>
-          <div class="slide-item" id="item8">
+          <div class="slide-item" id="item8" data-index="8">
             <div class="image-container">
               <img src="assets/images/icons/support.svg" />
             </div>
-            <p class="body-s-m m-24">Support`</p>
+            <p class="body-s-m m-24">Support</p>
           </div>
         </div>
+
+        <!-- desktop Slider -->
+        <div id="slick3">
+          <div class="slide-item desktop active" id="item1" data-index="1">
+            <div class="image-container">
+              <img src="assets/images/icons/domainhosting.svg" />
+            </div>
+            <p class="body-s-m m-24">Network Administration</p>
+          </div>
+          <div class="slide-item desktop" id="item2" data-index="2">
+            <div class="image-container">
+              <img src="assets/images/icons/domain.svg" />
+            </div>
+            <p class="body-s-m m-24">Domain Name</p>
+          </div>
+          <div class="slide-item desktop" id="item3" data-index="3">
+            <div class="image-container">
+              <img src="assets/images/icons/server.svg" />
+            </div>
+            <p class="body-s-m m-24">Server Facility</p>
+          </div>
+          <div class="slide-item desktop" id="item4" data-index="4">
+            <div class="image-container">
+              <img src="assets/images/icons/support.svg" />
+            </div>
+            <p class="body-s-m m-24">Support`</p>
+          </div>
+          <div class="slide-item desktop" id="item5" data-index="5">
+            <div class="image-container">
+              <img src="assets/images/icons/domainhosting.svg" />
+            </div>
+            <p class="body-s-m m-24">Network Administration</p>
+          </div>
+          <div class="slide-item desktop" id="item6" data-index="6">
+            <div class="image-container">
+              <img src="assets/images/icons/domain.svg" />
+            </div>
+            <p class="body-s-m m-24">Domain Name</p>
+          </div>
+          <div class="slide-item desktop" id="item7" data-index="7">
+            <div class="image-container">
+              <img src="assets/images/icons/server.svg" />
+            </div>
+            <p class="body-s-m m-24">Server Facility</p>
+          </div>
+          <div class="slide-item desktop" id="item8" data-index="8">
+            <div class="image-container">
+              <img src="assets/images/icons/support.svg" />
+            </div>
+            <p class="body-s-m m-24">Support</p>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </section>
   <!--Services Section Ends-->
 
@@ -621,6 +756,7 @@
   <script src="/assets/js/splide.js"></script>
   <script src="/assets/js/slick.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/slideWithCaption.js"></script>
 
 </body>
 

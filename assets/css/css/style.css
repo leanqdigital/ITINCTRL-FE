@@ -1,0 +1,1277 @@
+/*Styling Reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  z-index: 9999999;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*Styling Reset*/
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+/*Colors Varaibles Starts*/
+/*Primary Colors Starts*/
+/*Primary Colors Ends*/
+/*Secondary Colors Starts*/
+/*Secondary Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
+/*Colors Varaibles Ends*/
+.p0 {
+  color: #BFC2FF;
+}
+
+.p1 {
+  color: #8084FF;
+}
+
+.p2 {
+  color: #4047FF;
+}
+
+.p3 {
+  color: #000AFF;
+}
+
+.p4 {
+  color: #0007BF;
+}
+
+.p5 {
+  color: #000580;
+}
+
+.p6 {
+  color: #000240;
+}
+
+.p0-bg {
+  background: #BFC2FF;
+}
+
+.p1-bg {
+  background: #8084FF;
+}
+
+.p2-bg {
+  background: #4047FF;
+}
+
+.p3-bg {
+  background: #000AFF;
+}
+
+.p4-bg {
+  background: #0007BF;
+}
+
+.p5-bg {
+  background: #000580;
+}
+
+.p6-bg {
+  background: #000240;
+}
+
+.s0 {
+  color: #FFE5BF;
+}
+
+.s1 {
+  color: #FFCB80;
+}
+
+.s2 {
+  color: #FFB040;
+}
+
+.s3 {
+  color: #FF9600;
+}
+
+.s4 {
+  color: #BF7000;
+}
+
+.s5 {
+  color: #804B00;
+}
+
+.s6 {
+  color: #402500;
+}
+
+.s0-bg {
+  background: #FFE5BF;
+}
+
+.s1-bg {
+  background: #FFCB80;
+}
+
+.s2-bg {
+  background: #FFB040;
+}
+
+.s3-bg {
+  background: #FF9600;
+}
+
+.s4-bg {
+  background: #BF7000;
+}
+
+.s5-bg {
+  background: #804B00;
+}
+
+.s6-bg {
+  background: #402500;
+}
+
+.g0 {
+  color: #FFFFFF;
+}
+
+.g1 {
+  color: #E4E4E4;
+}
+
+.g2 {
+  color: #B7B7B7;
+}
+
+.g3 {
+  color: #909090;
+}
+
+.g4 {
+  color: #646464;
+}
+
+.g5 {
+  color: #353535;
+}
+
+.g6 {
+  color: #000000;
+}
+
+.g0-bg {
+  background: #FFFFFF;
+}
+
+.g1-bg {
+  background: #E4E4E4;
+}
+
+.g2-bg {
+  background: #B7B7B7;
+}
+
+.g3-bg {
+  background: #909090;
+}
+
+.g4-bg {
+  background: #646464;
+}
+
+.g5-bg {
+  background: #353535;
+}
+
+.g6-bg {
+  background: #000000;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+/*Colors Varaibles Starts*/
+/*Primary Colors Starts*/
+/*Primary Colors Ends*/
+/*Secondary Colors Starts*/
+/*Secondary Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
+/*Colors Varaibles Ends*/
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.h3-b {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.h4-b {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.h4-m {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.body-l {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+}
+
+.body-s {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body-s-m {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body-xs {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.body-l-bold {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+}
+
+.body-s-bold {
+  font-family: "basis_grotesque_arabic_proBd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn-text {
+  font-family: "basis_grotesque_arabic_proMd";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  font-family: "basis_grotesque_arabic_proRg";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+/*Colors Varaibles Starts*/
+/*Primary Colors Starts*/
+/*Primary Colors Ends*/
+/*Secondary Colors Starts*/
+/*Secondary Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
+/*Colors Varaibles Ends*/
+.primary-btn {
+  width: 100%;
+  padding: 8px 16px;
+  background: #000AFF;
+  color: #FFFFFF;
+}
+
+.primary-btn:hover {
+  background: #000580;
+}
+
+.secondary-btn {
+  width: 100%;
+  padding: 8px 16px;
+  background: #FF9600;
+  color: #FFFFFF;
+}
+
+.secondary-btn:hover {
+  background: #804B00;
+}
+
+.header .navbar {
+  width: 100%;
+  padding: 24px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.header .navbar .logo-container {
+  width: 192px;
+  height: 31px;
+}
+.header .navbar .logo-container img {
+  width: 100%;
+}
+.header .navbar .logo-container img:hover {
+  cursor: pointer;
+}
+.header .navbar .menu-items {
+  width: 570px !important;
+}
+.header .navbar .menu-items ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar .menu-items ul li {
+  list-style-type: none;
+}
+.header .navbar .menu-items ul li a {
+  text-decoration: none;
+}
+.header .navbar .menu-items ul li a:not(.btn-text):hover {
+  color: #000aff;
+}
+
+.footer-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+.footer-one .left .logo-container {
+  width: 51px;
+  height: 31px;
+}
+.footer-one .left .logo-container img {
+  width: 100%;
+}
+.footer-one .left .logo-container img:hover {
+  cursor: pointer;
+}
+.footer-one .left .social-container {
+  display: flex;
+  gap: 0 8px;
+}
+.footer-one .left .social-container .social-icon {
+  width: 32px;
+  height: 32px;
+}
+.footer-one .left .social-container .social-icon img {
+  width: 100%;
+}
+.footer-one .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 80px;
+}
+.footer-one .right .col .menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-one .right .col .menu-items a {
+  text-decoration: none;
+}
+.footer-one .right .col .menu-items a:not(.btn-text):hover {
+  color: #000aff;
+}
+
+.footer-two {
+  width: 100%;
+  padding: 40px 100px;
+}
+.footer-two .text-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 100px;
+}
+.contact .row .col .form-section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+.contact .row .col .form-section input {
+  border: none;
+  outline: none;
+  width: 649px;
+  height: 48px;
+  background: #F7F7F7;
+  padding: 5px;
+}
+.contact .row .col .form-section textarea {
+  border: none;
+  outline: none;
+  width: 649px;
+  background: #F7F7F7;
+  padding: 5px;
+}
+
+.container {
+  width: 100%;
+  padding: 80px 100px;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.hero {
+  padding: 166px 360px;
+}
+
+.clients-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-cards .card {
+  width: 240px;
+  height: 75px;
+  background: #d9d9d9;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.splide__slide img {
+  width: 170px;
+}
+
+.services-content {
+  display: flex;
+  gap: 0 170px;
+}
+.services-content .services-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.services-content .services-description .description {
+  display: none;
+}
+.services-content .services-description .description.active {
+  display: block;
+}
+.services-content .slide-item.active {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+.services-content .slide:hover {
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+.services-content .slick-wrapper {
+  width: 40%;
+}
+.services-content .slick-wrapper #slick1 {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .services-content .slick-wrapper #slick1 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .services-content .slick-wrapper #slick3 {
+    display: none;
+  }
+}
+.services-content .slick-arrow {
+  cursor: pointer;
+}
+.services-content .slick-prev {
+  position: absolute;
+  bottom: 50%;
+  right: 100%;
+}
+.services-content .slick-next {
+  position: absolute;
+  left: 100%;
+  bottom: 50%;
+}
+.services-content .slide-item {
+  background: #ffffff;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 205px !important;
+  height: 128px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.5s all;
+}
+.services-content .active-slide,
+.services-content .slide-item:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card-small {
+  width: 397px;
+  height: 294px;
+  background: #edeeff;
+}
+.cards .card-large {
+  width: 505px;
+  height: 374px;
+  background: #ffe5bf;
+}
+
+.testimonials .text-center #image-carousel2 .splide__track .splide__list .splide__slide,
+.testimonials .text-center #image-carousel3 .splide__track .splide__list .splide__slide {
+  margin-right: 40px;
+}
+
+.testimonials-card {
+  width: 400px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  transition: 0.3s all;
+}
+.testimonials-card .image-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #222;
+}
+.testimonials-card .testimonial-container {
+  text-align: left;
+}
+
+.testimonials-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.about-hero {
+  width: 100%;
+  padding: 100px 800px 100px 100px;
+}
+
+.about-section-first .row {
+  display: flex;
+  justify-content: space-between;
+}
+.about-section-first .row .col {
+  width: 653px;
+  height: 492px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section-first .row .col .text {
+  padding: 64px;
+}
+.about-section-first .row .col img {
+  width: 100%;
+}
+.about-section-first .row .col .image2 {
+  width: 351.94px;
+  height: 302.02px;
+}
+
+.about-section-second .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 130px;
+}
+.about-section-second .row .col {
+  width: 653px;
+  height: 492px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section-second .row .col img {
+  width: 100%;
+}
+.about-section-second .row .col .image2 {
+  width: 351.94px;
+  height: 302.02px;
+}
+
+.contact .row .col .text-area .contact-details .contact-content {
+  display: flex;
+  gap: 0 32px;
+}
+.contact .row .col .text-area .contact-details .contact-content .icon-container {
+  width: 24px;
+  height: 24px;
+}
+.contact .row .col .text-area .contact-details .contact-content .icon-container img {
+  width: 100%;
+}
+
+.bg-dark {
+  background: #d9d9d9;
+}
+
+.bg-light {
+  background: #fbfbff;
+}
+
+.bg-light-orange {
+  background: #fffdfa;
+}
+
+.bg-blue {
+  background: #000580;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-orange {
+  color: #ff9600;
+}
+
+.text-blue {
+  color: #000aff;
+}
+
+.btn-text {
+  text-decoration: none;
+}
+
+.m-8 {
+  margin-top: 8px;
+}
+
+.m-16 {
+  margin-top: 16px;
+}
+
+.m-24 {
+  margin-top: 24px;
+}
+
+.m-40 {
+  margin-top: 40px;
+}
+
+.m-80 {
+  margin-top: 80px;
+}
+
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+/*Colors Varaibles Starts*/
+/*Primary Colors Starts*/
+/*Primary Colors Ends*/
+/*Secondary Colors Starts*/
+/*Secondary Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
+/*Colors Varaibles Ends*/
+@media only screen and (max-width: 992px) {
+  .header .navbar {
+    padding: 24px 24px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .navbar .menu-items {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container,
+  .container-fluid,
+  .about-hero {
+    padding: 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding: 40px 24px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .h3-b {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .h4-b {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-l {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-l-bold {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-s {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-s-bold {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-s-m {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn-text {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  a {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .m-80 {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .clients #image-carousel .splide__track .splide__list .splide__slide img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #image-carousel4 .splide__track .splide__list .splide__slide img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hours {
+    padding: 24px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hours .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hours .cards .card {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .services .services-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .services .services-content .slick-wrapper {
+    width: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .services .services-content .slick-wrapper #slick1 {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .services .services-content .slick-wrapper #slick1 .slide-item {
+    width: 150px !important;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer-one {
+    padding: 24px 24px;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-one .left {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-one .right {
+    width: 100%;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px 80px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-one .right .m-24 {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer-two {
+    padding: 24px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-two .text-area {
+    width: 100%;
+    margin-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-section-first .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-section-first .row .col {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-section-first .row .col img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-section-second .row {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-section-second .row .col {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-section-second .row .col img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contact .row {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contact .row .col {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contact .row .col .form-section {
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contact .row .col .form-section input,
+  .contact .row .col .form-section textarea {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

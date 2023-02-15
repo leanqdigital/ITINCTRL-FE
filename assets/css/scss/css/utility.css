@@ -1,0 +1,59 @@
+.bg-dark {
+  background: #d9d9d9;
+}
+
+.bg-light {
+  background: #fbfbff;
+}
+
+.bg-light-orange {
+  background: #fffdfa;
+}
+
+.bg-blue {
+  background: #000580;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-orange {
+  color: #ff9600;
+}
+
+.text-blue {
+  color: #000aff;
+}
+
+.btn-text {
+  text-decoration: none;
+}
+
+.m-8 {
+  margin-top: 8px;
+}
+
+.m-16 {
+  margin-top: 16px;
+}
+
+.m-24 {
+  margin-top: 24px;
+}
+
+.m-40 {
+  margin-top: 40px;
+}
+
+.m-80 {
+  margin-top: 80px;
+}/*# sourceMappingURL=utility.css.map */
