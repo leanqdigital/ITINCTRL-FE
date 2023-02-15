@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "basis_grotesque_arabic_proBlk";
+  src: url("../../fonts/basisgrotesquearabicpro-black-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proBd";
+  src: url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proLt";
+  src: url("../../fonts/basisgrotesquearabicpro-light-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proMd";
+  src: url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "basis_grotesque_arabic_proRg";
+  src: url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff2") format("woff2"), url("../../fonts/basisgrotesquearabicpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font Variables Starts*/
+/*Fonts Families and Weights Starts*/
+/*Fonts Families and Weights Ends*/
+/*Fonts Size Starts*/
+/*Fonts Size Ends*/
+/*Line Height Starts*/
+/*Line Height Ends*/
+/* Font Variables Ends*/
+/*Colors Varaibles Starts*/
+/*Primary Colors Starts*/
+/*Primary Colors Ends*/
+/*Secondary Colors Starts*/
+/*Secondary Colors Ends*/
+/*Grayscale Colors Starts*/
+/*Grayscale Colors Ends*/
+/*Colors Varaibles Ends*/
+.p0 {
+  color: #BFC2FF;
+}
+
+.p1 {
+  color: #8084FF;
+}
+
+.p2 {
+  color: #4047FF;
+}
+
+.p3 {
+  color: #000AFF;
+}
+
+.p4 {
+  color: #0007BF;
+}
+
+.p5 {
+  color: #000580;
+}
+
+.p6 {
+  color: #000240;
+}
+
+.p0-bg {
+  background: #BFC2FF;
+}
+
+.p1-bg {
+  background: #8084FF;
+}
+
+.p2-bg {
+  background: #4047FF;
+}
+
+.p3-bg {
+  background: #000AFF;
+}
+
+.p4-bg {
+  background: #0007BF;
+}
+
+.p5-bg {
+  background: #000580;
+}
+
+.p6-bg {
+  background: #000240;
+}
+
+.s0 {
+  color: #FFE5BF;
+}
+
+.s1 {
+  color: #FFCB80;
+}
+
+.s2 {
+  color: #FFB040;
+}
+
+.s3 {
+  color: #FF9600;
+}
+
+.s4 {
+  color: #BF7000;
+}
+
+.s5 {
+  color: #804B00;
+}
+
+.s6 {
+  color: #402500;
+}
+
+.s0-bg {
+  background: #FFE5BF;
+}
+
+.s1-bg {
+  background: #FFCB80;
+}
+
+.s2-bg {
+  background: #FFB040;
+}
+
+.s3-bg {
+  background: #FF9600;
+}
+
+.s4-bg {
+  background: #BF7000;
+}
+
+.s5-bg {
+  background: #804B00;
+}
+
+.s6-bg {
+  background: #402500;
+}
+
+.g0 {
+  color: #FFFFFF;
+}
+
+.g1 {
+  color: #E4E4E4;
+}
+
+.g2 {
+  color: #B7B7B7;
+}
+
+.g3 {
+  color: #909090;
+}
+
+.g4 {
+  color: #646464;
+}
+
+.g5 {
+  color: #353535;
+}
+
+.g6 {
+  color: #000000;
+}
+
+.g0-bg {
+  background: #FFFFFF;
+}
+
+.g1-bg {
+  background: #E4E4E4;
+}
+
+.g2-bg {
+  background: #B7B7B7;
+}
+
+.g3-bg {
+  background: #909090;
+}
+
+.g4-bg {
+  background: #646464;
+}
+
+.g5-bg {
+  background: #353535;
+}
+
+.g6-bg {
+  background: #000000;
+}/*# sourceMappingURL=colors.css.map */

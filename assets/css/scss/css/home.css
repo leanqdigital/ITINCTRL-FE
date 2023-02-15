@@ -1,0 +1,141 @@
+.hero {
+  padding: 166px 360px;
+}
+
+.clients-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-cards .card {
+  width: 240px;
+  height: 75px;
+  background: #d9d9d9;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.splide__slide img {
+  width: 170px;
+}
+
+.services-content {
+  display: flex;
+  gap: 0 170px;
+}
+.services-content .services-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.services-content .services-description .description {
+  display: none;
+}
+.services-content .services-description .description.active {
+  display: block;
+}
+.services-content .slide-item.active {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+.services-content .slide:hover {
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+.services-content .slick-wrapper {
+  width: 40%;
+}
+.services-content .slick-arrow {
+  cursor: pointer;
+}
+.services-content .slick-prev {
+  position: absolute;
+  bottom: 50%;
+  right: 100%;
+}
+.services-content .slick-next {
+  position: absolute;
+  left: 100%;
+  bottom: 50%;
+}
+.services-content .slide-item {
+  background: #ffffff;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 205px !important;
+  height: 128px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.5s all;
+}
+.services-content .active-slide,
+.services-content .slide-item:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 10, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card-small {
+  width: 397px;
+  height: 294px;
+  background: #edeeff;
+}
+.cards .card-large {
+  width: 505px;
+  height: 374px;
+  background: #ffe5bf;
+}
+
+.testimonials .text-center #image-carousel2 .splide__track .splide__list .splide__slide,
+.testimonials .text-center #image-carousel3 .splide__track .splide__list .splide__slide {
+  margin-right: 40px;
+}
+
+.testimonials-card {
+  width: 400px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  transition: 0.3s all;
+}
+.testimonials-card .image-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #222;
+}
+.testimonials-card .testimonial-container {
+  text-align: left;
+}
+
+.testimonials-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,11 @@
+.contact .row .col .text-area .contact-details .contact-content {
+  display: flex;
+  gap: 0 32px;
+}
+.contact .row .col .text-area .contact-details .contact-content .icon-container {
+  width: 24px;
+  height: 24px;
+}
+.contact .row .col .text-area .contact-details .contact-content .icon-container img {
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */

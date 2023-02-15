@@ -1,0 +1,37 @@
+.header .navbar {
+  width: 100%;
+  padding: 24px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.header .navbar .logo-container {
+  width: 192px;
+  height: 31px;
+}
+.header .navbar .logo-container img {
+  width: 100%;
+}
+.header .navbar .logo-container img:hover {
+  cursor: pointer;
+}
+.header .navbar .menu-items {
+  width: 570px !important;
+}
+.header .navbar .menu-items ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar .menu-items ul li {
+  list-style-type: none;
+}
+.header .navbar .menu-items ul li a {
+  text-decoration: none;
+}
+.header .navbar .menu-items ul li a:not(.btn-text):hover {
+  color: #000aff;
+}/*# sourceMappingURL=navbar.css.map */
