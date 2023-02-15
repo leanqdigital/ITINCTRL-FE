@@ -26,6 +26,10 @@
           justify-content: center;
 }
 
+.about-section-first .row .col .text {
+  padding: 64px;
+}
+
 .about-section-first .row .col img {
   width: 100%;
 }

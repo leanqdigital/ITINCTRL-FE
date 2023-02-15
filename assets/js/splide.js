@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       640: {
-        perPage: 1,
+        perPage: 2,
       },
     },
-  }).mount( window.splide.Extensions);
+  }).mount(window.splide.Extensions);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     arrows: false,
     autoScroll: {
-      speed: .5,
+      speed: 0.5,
     },
     breakpoints: {
       640: {
         perPage: 1,
       },
     },
-  }).mount( window.splide.Extensions);
+  }).mount(window.splide.Extensions);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     arrows: false,
     autoScroll: {
-      speed: -.5,
+      speed: -0.5,
     },
     breakpoints: {
       640: {
         perPage: 1,
       },
     },
-  }).mount( window.splide.Extensions);
+  }).mount(window.splide.Extensions);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     arrows: false,
     autoScroll: {
-      speed: .5,
+      speed: 0.5,
     },
     breakpoints: {
       640: {
         perPage: 1,
       },
     },
-  }).mount( window.splide.Extensions);
+  }).mount(window.splide.Extensions);
 });

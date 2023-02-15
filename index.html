@@ -6,38 +6,138 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ITINCTRL</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icons/favicon.png">
   <link rel="stylesheet" href="/assets/css/scss/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 </head>
+<style>
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-logo .desktop-logo {
+    height: 31px;
+  }
+
+  .navbar-logo .mobile-logo {
+    display: none;
+  }
+
+
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-menu li {
+    margin: 0 48px 0 0;
+  }
+
+  .navbar-menu a:not(.primary-btn) {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .navbar-menu a:hover {
+    color: blue;
+  }
+
+  .navbar-menu-mobile{
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .navbar-logo .desktop-logo {
+      display: none;
+    }
+
+    .navbar-logo .mobile-logo {
+      display: block;
+      height: 31px;
+    }
+
+    .navbar-hamburger {
+      display: block;
+    }
+
+    .navbar-hamburger a {
+      color: #222;
+      font-size: 24px;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-hamburger.active~.navbar-menu-mobile {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+</style>
 
 <body>
   <!--Header Section Starts-->
   <section class="header">
-    <div class="navbar">
-      <div class="logo-container">
-        <img src="assets/images/logos/logo.png" />
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <img class="desktop-logo" src="/assets/images/logos/logo.png" alt="ITINCONTROL">
+          <img class="mobile-logo" src="/assets/images/logos/logo_icon.png" alt="ITINCONTROL">
+        </div>
+        <div class="navbar-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-menu-mobile">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-hamburger">
+          <a href="#" onclick="toggleNavbar()">&#9776;</a>
+        </div>
       </div>
-      <div class="menu-items">
-        <ul>
-          <li>
-            <a class="nav-item" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="nav-item" href="about.html">About</a>
-          </li>
-          <li>
-            <a class="nav-item" href="service.html">Services</a>
-          </li>
-          <li>
-            <a class="nav-item" href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </nav>
   </section>
   <!--Header Section Ends-->
 
@@ -46,7 +146,7 @@
     <div class="text-center">
       <h1>
         Simplifying Information Technology
-        <span class="text-orange">Solutions</span>
+        <span class="s3">Solutions</span>
         That Work
       </h1>
       <p class="body-s m-16 g4">
@@ -89,7 +189,7 @@
   <!--Services Section Starts-->
   <section class="services | container bg-light-orange">
     <div class="text-center">
-      <p class="h3-b">Our Services</p>
+      <span class="h3-b">Our Services</span>
     </div>
     <div class="services-content m-80">
       <div class="services-description">
@@ -266,7 +366,7 @@
   <!--CTA Section Ends-->
 
   <!--Support Section Starts-->
-  <section class="container">
+  <section class="container hours">
     <div class="cards | text-center">
       <div class="card card-small">
         <p class="h4-b">Hours</p>
@@ -305,10 +405,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -320,10 +420,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -335,10 +435,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -350,10 +450,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -371,10 +471,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -386,10 +486,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -401,10 +501,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -416,10 +516,10 @@
                 <div class="image-container">
                   <img src="/assets/images/testimonials/testimonial.png" alt="" />
                 </div>
-                <div class="name-container">
+                <div class="name-container m-24">
                   <p class="h4-b g5">John Doe</p>
                 </div>
-                <div class="testimonial-container">
+                <div class="testimonial-container m-8">
                   <p class="body-s g4">With 10 years’ experience in the IT sector, you can be sure our technicians will
                     provide the most
                     up to date knowledge.</p>
@@ -454,7 +554,7 @@
       <div class="logo-container">
         <img src="/assets/images/logos/logo_icon.png">
       </div>
-      <p class="h4-b m-16">Contact us to discuss your <br>requirements</p>
+      <p class="h4-b m-16">Contact us to discuss your requirements</p>
       <div class="social-container m-16">
         <div class="facebook social-icon">
           <img src="/assets/images/icons/facebook.png">

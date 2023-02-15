@@ -29,6 +29,7 @@
   width: 649px;
   height: 48px;
   background: #F7F7F7;
+  padding: 5px;
 }
 
 .contact .row .col .form-section textarea {

@@ -1,0 +1,353 @@
+@import "../variables/variables.scss";
+
+$mobile-res-max-width: 992px;
+$tablet-res-min-width: 768px;
+$desktop-res-min-width: 992px;
+
+@mixin forScreenSizesMin($deviceType) {
+  @if $deviceType == phone {
+    @media only screen and (max-width: $mobile-res-max-width) {
+      @content;
+    }
+  }
+  @if $deviceType == tablet {
+    @media only screen and (min-width: $tablet-res-min-width) {
+      @content;
+    }
+  }
+
+  @if $deviceType == desktop {
+    @media only screen and (min-width: $desktop-res-min-width) {
+      @content;
+    }
+  }
+}
+
+.header {
+  .navbar {
+    @include forScreenSizesMin(phone) {
+      padding: 24px 24px;
+      position: relative;
+    }
+    .menu-items {
+      @include forScreenSizesMin(phone) {
+        display: none;
+      }
+    }
+  }
+}
+.container,
+.container-fluid,
+.about-hero {
+  @include forScreenSizesMin(phone) {
+    padding: 24px 24px;
+  }
+}
+
+.hero {
+  @include forScreenSizesMin(phone) {
+    padding: 40px 24px !important;
+  }
+}
+
+h1 {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-32px;
+    line-height: $lh-48px;
+  }
+}
+
+h2 {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-24px;
+    line-height: $lh-40px;
+  }
+}
+
+h3 {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-20px;
+    line-height: $lh-32px;
+  }
+}
+
+.h3-b {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-20px;
+    line-height: $lh-32px;
+  }
+}
+
+h4 {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-18px;
+    line-height: $lh-24px;
+  }
+}
+
+.h4-b {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-18px;
+    line-height: $lh-24px;
+  }
+}
+
+.body-l {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-16px;
+    line-height: $lh-24px;
+  }
+}
+
+.body-l-bold {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-16px;
+    line-height: $lh-24px;
+  }
+}
+
+.body-s {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-16px;
+    line-height: $lh-24px;
+  }
+}
+
+.body-s-bold {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-16px;
+    line-height: $lh-24px;
+  }
+}
+
+.body-s-m {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-12px;
+    line-height: $lh-16px;
+  }
+}
+
+.body-xs {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-12px;
+    line-height: $lh-16px;
+  }
+}
+
+.btn-text {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-14px;
+    line-height: $lh-16px;
+  }
+}
+
+a {
+  @include forScreenSizesMin(phone) {
+    font-size: $fs-12px;
+    line-height: $lh-16px;
+  }
+}
+
+.m-80 {
+  @include forScreenSizesMin(phone) {
+    margin-top: 40px;
+  }
+}
+
+.clients {
+  #image-carousel {
+    .splide__track {
+      .splide__list {
+        .splide__slide {
+          img {
+            @include forScreenSizesMin(phone) {
+              width: 120px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#image-carousel4 {
+  .splide__track {
+    .splide__list {
+      .splide__slide {
+        img {
+          @include forScreenSizesMin(phone) {
+            width: 120px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hours {
+  @include forScreenSizesMin(phone) {
+    padding: 24px !important;
+  }
+  .cards {
+    @include forScreenSizesMin(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      @include forScreenSizesMin(phone) {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.services {
+  .services-content {
+    @include forScreenSizesMin(phone) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .slick-wrapper {
+      @include forScreenSizesMin(phone) {
+        width: 100%;
+        padding: 24px;
+      }
+      #slick1 {
+        @include forScreenSizesMin(phone) {
+          display: flex;
+          flex-direction: column !important;
+        }
+        .slide-item {
+          @include forScreenSizesMin(phone) {
+            width: 150px !important;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-one {
+  @include forScreenSizesMin(phone) {
+    padding: 24px 24px;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .left {
+    @include forScreenSizesMin(phone) {
+      width: 100%;
+    }
+  }
+  .right {
+    @include forScreenSizesMin(phone) {
+      width: 100%;
+      margin-top: 40px;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 40px 80px;
+    }
+    .m-24 {
+      @include forScreenSizesMin(phone) {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+.footer-two {
+  @include forScreenSizesMin(phone) {
+    padding: 24px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .text-area {
+    @include forScreenSizesMin(phone) {
+      width: 100%;
+      margin-top: 8px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px 0;
+    }
+  }
+}
+
+.about-section-first {
+  .row {
+    @include forScreenSizesMin(phone) {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .col {
+      @include forScreenSizesMin(phone) {
+        width: 100%;
+      }
+      img {
+        @include forScreenSizesMin(phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.about-section-second {
+  .row {
+    @include forScreenSizesMin(phone) {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .col {
+      @include forScreenSizesMin(phone) {
+        width: 100%;
+      }
+      img {
+        @include forScreenSizesMin(phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  .row {
+    @include forScreenSizesMin(phone) {
+      flex-direction: column;
+      padding: 0;
+      gap: 0;
+    }
+    .col {
+      @include forScreenSizesMin(phone) {
+        width: 100%;
+      }
+      .form-section {
+        @include forScreenSizesMin(phone) {
+          width: 100%;
+          margin-top: 40px;
+          padding: 16px;
+        }
+        input,
+        textarea {
+          @include forScreenSizesMin(phone) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
