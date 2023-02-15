@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       640: {
-        perPage: 1,
+        perPage: 2,
       },
     },
   }).mount(window.splide.Extensions);

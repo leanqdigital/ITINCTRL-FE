@@ -35,7 +35,6 @@
     display: none;
   }
 
-
   .navbar-menu ul {
     display: flex;
     list-style: none;
@@ -89,26 +88,7 @@
       text-decoration: none;
     }
 
-    /* #navbar-mobile.hide .cross-icon {
-        display: none;
-    }  
-
-    #navbar-mobile.show .hamburger-icon {
-        display: none;
-    }   */
-
-    /* .navbar-menu-mobile{
-      display: none;
-    }
-
-    .navbar-menu-mobile.active{
-      display: block;
-      background-color: #f2f2f2;
-      padding: 10px;
-      width: 100%;
-    } */
-
-    #navbar-mobile{
+   #navbar-mobile{
       opacity: 0;
       transform: scale(0);
       transition: .4s ease opacity,.4s ease transform;
@@ -139,9 +119,7 @@
     display: none;
   } 
 
-
-
-  @media only screen and (min-width: 320px) and (max-width: 500px) {
+  @media only screen and (min-width: 320px) and (max-width: 991px) {
     #slick3{
     display: none;
   } 
@@ -150,18 +128,6 @@
     display: block;
   } 
   }
-
-  /* @media only screen and (max-width: 768px) {
-    .navbar-hamburger.active~.navbar-menu-mobile {
-      display: block;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      padding: 10px;
-      width: 100%;
-    }
-  } */
 </style>
 
 <body>
@@ -184,26 +150,9 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="navbar-menu-mobile">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
-            </li>
-          </ul>
-        </div> -->
-
-        <!-- onclick="toggleNavbar()" -->
         <div id="btn-nav-show" class="navbar-hamburger">
-          <!-- <a id="hamburger-icon" href="#">&#9747;</a> -->
           <a id="cross-icon" href="#">&#9776;</a>
         </div>
-
-        <!-- cross &#9776; -->
-        <!-- cross &#9747; -->
       </div>
     </nav>
   </section>

@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
-$mobile-res-max-width: 992px;
-$tablet-res-min-width: 768px;
+$mobile-res-max-width: 600px;
+$tablet-res-min-width: 991px;
 $desktop-res-min-width: 992px;
 
 @mixin forScreenSizesMin($deviceType) {
@@ -11,7 +11,7 @@ $desktop-res-min-width: 992px;
     }
   }
   @if $deviceType == tablet {
-    @media only screen and (min-width: $tablet-res-min-width) {
+    @media only screen and (max-width: $tablet-res-min-width) {
       @content;
     }
   }
@@ -36,6 +36,20 @@ $desktop-res-min-width: 992px;
     }
   }
 }
+.header {
+  .navbar {
+    @include forScreenSizesMin(tablet) {
+      padding: 24px 24px;
+      position: relative;
+    }
+    .menu-items {
+      @include forScreenSizesMin(tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
 .container,
 .container-fluid,
 .about-hero {
@@ -43,9 +57,21 @@ $desktop-res-min-width: 992px;
     padding: 24px 24px;
   }
 }
+.container,
+.container-fluid,
+.about-hero {
+  @include forScreenSizesMin(tablet) {
+    padding: 24px 24px;
+  }
+}
 
 .hero {
   @include forScreenSizesMin(phone) {
+    padding: 40px 24px !important;
+  }
+}
+.hero {
+  @include forScreenSizesMin(tablet) {
     padding: 40px 24px !important;
   }
 }
@@ -136,14 +162,14 @@ h4 {
 
 .btn-text {
   @include forScreenSizesMin(phone) {
-    font-size: $fs-14px;
+    font-size: $fs-12px;
     line-height: $lh-16px;
   }
 }
 
 a {
   @include forScreenSizesMin(phone) {
-    font-size: $fs-12px;
+    font-size: $fs-14px;
     line-height: $lh-16px;
   }
 }
@@ -170,15 +196,16 @@ a {
     }
   }
 }
-
-#image-carousel4 {
-  .splide__track {
-    .splide__list {
-      .splide__slide {
-        img {
-          @include forScreenSizesMin(phone) {
-            width: 120px;
-            height: auto;
+.clients {
+  #image-carousel4 {
+    .splide__track {
+      .splide__list {
+        .splide__slide {
+          img {
+            @include forScreenSizesMin(phone) {
+              width: 120px;
+              height: auto;
+            }
           }
         }
       }
@@ -207,10 +234,16 @@ a {
 
 .services {
   .services-content {
-    @include forScreenSizesMin(phone) {
+    @media only screen and (min-width: 320px) and (max-width: 991px) {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
+
+    // @include forScreenSizesMin(phone) {
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    // }
     .slick-wrapper {
       @include forScreenSizesMin(phone) {
         width: 100%;
@@ -283,16 +316,31 @@ a {
 }
 
 .about-section-first {
+  @include forScreenSizesMin(phone) {
+    padding: 24px;
+  }
   .row {
     @include forScreenSizesMin(phone) {
       width: 100%;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      gap: 0;
     }
     .col {
       @include forScreenSizesMin(phone) {
         width: 100%;
+        height: auto;
+      }
+      @include forScreenSizesMin(phone) {
+        width: 100%;
+        .text {
+          @include forScreenSizesMin(phone) {
+            width: 100%;
+            padding: 0;
+            margin-top: 16px;
+          }
+        }
       }
       img {
         @include forScreenSizesMin(phone) {
@@ -314,6 +362,14 @@ a {
     .col {
       @include forScreenSizesMin(phone) {
         width: 100%;
+        height: auto;
+        .text {
+          @include forScreenSizesMin(phone) {
+            width: 100%;
+            padding: 0;
+            margin-top: 16px;
+          }
+        }
       }
       img {
         @include forScreenSizesMin(phone) {

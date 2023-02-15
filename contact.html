@@ -11,35 +11,198 @@
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 </head>
+<style>
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-logo .desktop-logo {
+    height: 31px;
+  }
+
+  .navbar-logo .mobile-logo {
+    display: none;
+  }
+
+
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-menu li {
+    margin: 0 48px 0 0;
+  }
+
+  .navbar-menu a:not(.primary-btn) {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .navbar-menu a:hover {
+    color: blue;
+  }
+
+  .navbar-menu-mobile{
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    
+    .navbar-menu {
+      display: none;
+    }
+
+    .navbar-logo .desktop-logo {
+      display: none;
+    }
+
+    .navbar-logo .mobile-logo {
+      display: block;
+      height: 31px;
+    }
+
+    .navbar-hamburger {
+      display: block;
+    }
+
+    .navbar-hamburger a {
+      color: #222;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    /* #navbar-mobile.hide .cross-icon {
+        display: none;
+    }  
+
+    #navbar-mobile.show .hamburger-icon {
+        display: none;
+    }   */
+
+    /* .navbar-menu-mobile{
+      display: none;
+    }
+
+    .navbar-menu-mobile.active{
+      display: block;
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+    } */
+
+    #navbar-mobile{
+      opacity: 0;
+      transform: scale(0);
+      transition: .4s ease opacity,.4s ease transform;
+    }
+
+    .mobile-nav-flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px 0;
+      margin: 14px 0;
+      
+    }
+
+    .mobile-nav-flex > a{
+      text-decoration: none;
+    }
+
+    .mobile-nav-flex > .primary-btn{
+      max-width: 40vw;
+      text-align: center;
+    }
+
+  }
+
+  #slick1{
+    display: none;
+  } 
+
+
+
+  @media only screen and (min-width: 320px) and (max-width: 500px) {
+    #slick3{
+    display: none;
+  } 
+
+  #slick1{
+    display: block;
+  } 
+  }
+
+  /* @media only screen and (max-width: 768px) {
+    .navbar-hamburger.active~.navbar-menu-mobile {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      padding: 10px;
+      width: 100%;
+    }
+  } */
+</style>
 
 <body>
  <!--Header Section Starts-->
  <section class="header">
-  <div class="navbar">
-    <div class="logo-container">
-      <img src="assets/images/logos/logo.png" />
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img class="desktop-logo" src="/assets/images/logos/logo.png" alt="ITINCONTROL">
+        <img class="mobile-logo" src="/assets/images/logos/logo_icon.png" alt="ITINCONTROL">
+      </div>
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
+          </li>
+        </ul>
+      </div>
+      <div id="btn-nav-show" class="navbar-hamburger">
+        <a id="cross-icon" href="#">&#9776;</a>
+      </div>
     </div>
-    <div class="menu-items">
-      <ul>
-        <li>
-          <a class="nav-item" href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="nav-item" href="about.html">About</a>
-        </li>
-        <li>
-          <a class="nav-item" href="service.html">Services</a>
-        </li>
-        <li>
-          <a class="nav-item" href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </nav>
 </section>
+<!--Header Section Ends-->
+
+<div id="navbar-mobile" class="navbar-menu-mobile" style="display: none">
+  <div class="mobile-nav-flex">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="contact.html">Contact</a>
+    
+      <a class="primary-btn nav-item btn-text" href="">Get Free Appraisal</a>
+  </div>
+</div>
+
 <!--Header Section Ends-->
 
   <!--Form Section Starts-->
